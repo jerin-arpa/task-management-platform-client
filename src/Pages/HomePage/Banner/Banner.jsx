@@ -17,7 +17,7 @@ const Banner = () => {
                                         </div>
                                         <p className="mb-4 text-xl text-white">Task Management</p>
                                     </div>
-                                    <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">FestCon <span className="text-info">Management</span> at Your Service</h1>
+                                    <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Task <span className="text-info">Management</span> Platform</h1>
                                     <p className="mb-5 text-white">From concept to applause, FestCon Management conducts remarkable festivals. Our team brings precision, passion, and expertise to every beat, ensuring your festival is a resounding success.</p>
                                     <button className="btn bg-info border-0 text-white hover:bg-white hover:text-info px-14">Lets Explore</button>
                                 </div>
