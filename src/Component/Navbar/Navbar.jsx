@@ -26,14 +26,19 @@ const Navbar = () => {
             }>Home</NavLink>
         </li>
         <li>
-            <NavLink to='/speakers' className={({ isActive, isPending }) =>
+            <NavLink to='/dashboard' className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "font-bold text-info underline" : ""
-            }>Speakers</NavLink>
+            }>Dashboard</NavLink>
         </li>
         <li>
-            <NavLink to='/gallery' className={({ isActive, isPending }) =>
+            <NavLink to='/blog' className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "font-bold text-info underline" : ""
-            }>Gallery</NavLink>
+            }>Blog</NavLink>
+        </li>
+        <li>
+            <NavLink to='/contact' className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "font-bold underline text-info" : ""
+            }>Contact</NavLink>
         </li>
         <li>
             <NavLink to='/about' className={({ isActive, isPending }) =>
