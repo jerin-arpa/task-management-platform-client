@@ -1,27 +1,10 @@
-import banner from '../../../assets/images/2.png'
+import banner from '../../../assets/images/2.png';
 
 
 const Banner = () => {
     return (
         <div>
             <div>
-                {/* <div>
-                    <div className="container mx-auto px-5 flex flex-col lg:flex-row gap-10">
-                        <div className="flex-1 flex items-center">
-                            <div>
-                                <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Manage Your Task easily with <span className="text-amber-500">Task Management</span></h1>
-                                <p className="mb-5 text-white">Manage Your Task easily with Task Management</p>
-                                <button className="btn bg-amber-500 border-0 text-white hover:bg-white hover:text-amber-500 px-14">Lets Explore</button>
-                            </div>
-                        </div>
-
-                        <div className="flex-1">
-                            <img className='w-full' src={banner} alt="" />
-                        </div>
-                    </div>
-                </div> */}
-
-
                 <div className="carousel w-full">
                     <div id="slide1" className="carousel-item relative w-full">
                         <div className="hero" style={{ backgroundImage: `url(${banner})` }}>
