@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaUserCircle } from 'react-icons/fa';
 import { LuLogOut } from 'react-icons/lu';
-import { GiGuitarBassHead } from 'react-icons/gi';
 
 
 const Navbar = () => {
@@ -51,7 +50,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar container mx-auto px-5 py-7 text-white">
+            <div className="navbar container mx-auto px-5 py-7">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,7 +61,6 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex gap-1">
-                        <GiGuitarBassHead className="text-3xl text-info"></GiGuitarBassHead>
                         <p className="text-sm md:text-2xl font-extrabold"><span className="text-info">Task</span> Management</p>
                     </div>
                 </div>
