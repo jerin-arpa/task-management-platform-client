@@ -21,27 +21,27 @@ const Navbar = () => {
     const navLink = <>
         <li>
             <NavLink to='/' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-info underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
             }>Home</NavLink>
         </li>
         <li>
             <NavLink to='/dashboard' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-info underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
             }>Dashboard</NavLink>
         </li>
         <li>
             <NavLink to='/blog' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-info underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
             }>Blog</NavLink>
         </li>
         <li>
             <NavLink to='/contact' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-info" : ""
+                isPending ? "pending" : isActive ? "font-bold underline text-amber-500" : ""
             }>Contact</NavLink>
         </li>
         <li>
             <NavLink to='/about' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-info" : ""
+                isPending ? "pending" : isActive ? "font-bold underline text-amber-500" : ""
             }>About</NavLink>
         </li>
     </>
@@ -61,7 +61,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex gap-1">
-                        <p className="text-sm md:text-2xl font-extrabold"><span className="text-info">Task</span> Management</p>
+                        <p className="text-sm md:text-2xl font-extrabold"><span className="text-amber-500">Task</span> Management</p>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -107,22 +107,22 @@ const Navbar = () => {
                                                     <hr className="my-7 w-1/2" />
                                                 </div>
                                                 <div className="text-center">
-                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-info">Name:</span> {user.displayName
+                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-amber-500">Name:</span> {user.displayName
                                                     }</h2>
-                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-info">Email:</span> {user.email}</p>
+                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-amber-500">Email:</span> {user.email}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <Link to='/login' className="flex items-center">
-                                        <button onClick={handleSignOut} className="bg-info border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
+                                        <button onClick={handleSignOut} className="bg-amber-500 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
                                     </Link>
                                 </div>
                                 :
                                 <>
                                     <Link to='/login'>
-                                        <button className="bg-info border-0 text-white p-2 md:p-3 px-1 md:px-4 rounded-lg text-sm md:text-xl">Login</button>
+                                        <button className="bg-amber-500 border-0 text-white p-2 md:p-3 px-1 md:px-4 rounded-lg text-sm md:text-xl">Login</button>
                                     </Link>
                                 </>
                         }

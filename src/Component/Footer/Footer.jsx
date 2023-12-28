@@ -1,16 +1,12 @@
-import { GiGuitarBassHead } from 'react-icons/gi';
-
-
 const Footer = () => {
     return (
-        <div className="bg-slate-950 text-white py-20">
+        <div className="bg-base-200 text-base-content py-20">
             <footer className="footer p-10 container mx-auto px-5">
                 <div>
                     <div className="flex gap-1">
-                        <GiGuitarBassHead className="text-3xl text-info"></GiGuitarBassHead>
-                        <p className="text-2xl font-extrabold"><span className="text-info">FestCon</span> Management</p>
+                        <p className="text-2xl font-extrabold"><span className="text-amber-500">Task</span> Management</p>
                     </div>
-                    <p className='ml-9'>Providing reliable tech since 2021</p>
+                    <p>Providing reliable tech since 2021</p>
                 </div>
                 <nav>
                     <header className="uppercase text-xl text-gray-500 font-bold mb-5">Services</header>

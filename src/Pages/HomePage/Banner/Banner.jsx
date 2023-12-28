@@ -9,9 +9,9 @@ const Banner = () => {
                     <div className="container mx-auto px-5 flex flex-col lg:flex-row gap-10">
                         <div className="flex-1 flex items-center">
                             <div>
-                                <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Manage Your Task easily with <span className="text-info">Task Management</span></h1>
+                                <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Manage Your Task easily with <span className="text-amber-500">Task Management</span></h1>
                                 <p className="mb-5 text-white">Manage Your Task easily with Task Management</p>
-                                <button className="btn bg-info border-0 text-white hover:bg-white hover:text-info px-14">Lets Explore</button>
+                                <button className="btn bg-amber-500 border-0 text-white hover:bg-white hover:text-amber-500 px-14">Lets Explore</button>
                             </div>
                         </div>
 
@@ -30,7 +30,7 @@ const Banner = () => {
                                 <div className="flex-1">
                                     <h1 className="mb-5 text-3xl lg:text-5xl font-bold">Task <span className="text-amber-500">Management</span> Platform</h1>
                                     <p className="mb-5">From concept to applause, FestCon Management conducts remarkable festivals. Our team brings precision, passion, and expertise to every beat, ensuring your festival is a resounding success.</p>
-                                    <button className="btn bg-info border-0 text-white hover:bg-white hover:text-info px-14">Lets Explore</button>
+                                    <button className="btn bg-amber-500 border-0 text-white hover:bg-white hover:text-amber-500 px-14">Lets Explore</button>
                                 </div>
 
                                 <div className="flex-1">
