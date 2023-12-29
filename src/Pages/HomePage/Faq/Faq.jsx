@@ -21,7 +21,7 @@ const Faq = () => {
             <div className='flex flex-col-reverse lg:flex-row gap-10'>
                 <div className='flex-1 mt-5'>
                     <div className="collapse collapse-plus bg-gray-100 mb-5">
-                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <input type="radio" name="my-accordion-3" defaultChecked="checked" />
                         <div className="collapse-title text-xl font-medium">
                             How can I create a new task on your platform?
                         </div>
