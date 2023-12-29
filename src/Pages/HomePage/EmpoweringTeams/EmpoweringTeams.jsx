@@ -16,7 +16,7 @@ const EmpoweringTeams = () => {
                 <div className="mb-8">
                     <p className='text-xl font-bold mb-5 text-center'>work smarter</p>
                     <div className="flex justify-center">
-                        <h2 className='mb-5 text-3xl lg:text-5xl font-bold text-center w-1/2'>EmpoweringTeams of <br /> All Sizes to Achieve More</h2>
+                        <h2 className='mb-5 text-3xl lg:text-5xl font-bold text-center w-1/2'>Empowering Teams of <br /> All Sizes to Achieve More</h2>
                     </div>
                     <div className="flex justify-center">
                         <p className="text-center w-2/3">Empowering Teams is a dynamic and transformative approach to collaboration, fostering an environment where every team member is not just a participant but an active contributor. </p>
