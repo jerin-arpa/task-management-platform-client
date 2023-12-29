@@ -4,7 +4,7 @@ const Footer = () => {
             <footer className="footer p-10 container mx-auto px-5">
                 <div>
                     <div className="flex gap-1">
-                        <p className="text-2xl font-extrabold"><span className="text-amber-500">Task</span> Management</p>
+                        <p className="text-2xl font-extrabold"><span className="text-[#fc5a03]">Task</span> Management</p>
                     </div>
                     <p>Providing reliable tech since 2021</p>
                 </div>

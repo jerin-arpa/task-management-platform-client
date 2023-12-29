@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaUserCircle } from 'react-icons/fa';
 import { LuLogOut } from 'react-icons/lu';
-
+import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
 
@@ -21,27 +21,27 @@ const Navbar = () => {
     const navLink = <>
         <li>
             <NavLink to='/' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
             }>Home</NavLink>
         </li>
         <li>
             <NavLink to='/dashboard' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
             }>Dashboard</NavLink>
         </li>
         <li>
             <NavLink to='/blog' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-amber-500 underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
             }>Blog</NavLink>
         </li>
         <li>
             <NavLink to='/contact' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-amber-500" : ""
+                isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
             }>Contact</NavLink>
         </li>
         <li>
             <NavLink to='/about' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-amber-500" : ""
+                isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
             }>About</NavLink>
         </li>
     </>
@@ -60,26 +60,26 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <div className="flex gap-1">
-                        <p className="text-sm md:text-2xl font-extrabold"><span className="text-amber-500">Task</span> Management</p>
+                    <div className="flex gap-2">
+                        <img className="w-10" src={logo} alt="" />
+                        <div className="flex items-center">
+                            <p className="text-sm md:text-2xl font-extrabold">Task <span className="text-[#fc5a03]">Management</span> </p>
+                        </div>
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="flex gap-7 px-1">
-                        {navLink}
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    <div className="mr-2">
 
+                <div className="navbar-end">
+                    <div className="hidden lg:flex mr-5">
+                        <ul className="flex gap-7 px-1">
+                            {navLink}
+                        </ul>
+                    </div>
+                    <div className="mr-2">
                         {
                             user ?
                                 <div className="flex gap-2 md:gap-4">
                                     <div className="dropdown dropdown-end">
                                         <div className="flex gap-3">
-                                            <div className="flex items-center">
-                                                <h2 className="hidden md:flex">{user.displayName}</h2>
-                                            </div>
                                             <label tabIndex={0}>
                                                 {
                                                     user.photoURL ? (
@@ -107,22 +107,22 @@ const Navbar = () => {
                                                     <hr className="my-7 w-1/2" />
                                                 </div>
                                                 <div className="text-center">
-                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-amber-500">Name:</span> {user.displayName
+                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-[#fc5a03]">Name:</span> {user.displayName
                                                     }</h2>
-                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-amber-500">Email:</span> {user.email}</p>
+                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-[#fc5a03]">Email:</span> {user.email}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <Link to='/login' className="flex items-center">
-                                        <button onClick={handleSignOut} className="bg-amber-500 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
+                                        <button onClick={handleSignOut} className="bg-[#fc5a03] border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
                                     </Link>
                                 </div>
                                 :
                                 <>
                                     <Link to='/login'>
-                                        <button className="bg-amber-500 border-0 text-white p-2 md:p-3 px-1 md:px-4 rounded-lg text-sm md:text-xl">Login</button>
+                                        <button className="bg-[#fc5a03] border-0 text-white p-2 md:p-3 px-1 md:px-4 rounded-lg text-sm md:text-xl">Login</button>
                                     </Link>
                                 </>
                         }
