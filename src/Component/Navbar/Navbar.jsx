@@ -19,31 +19,55 @@ const Navbar = () => {
 
 
     const navLink = <>
-        <li>
-            <NavLink to='/' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
-            }>Home</NavLink>
-        </li>
-        <li>
-            <NavLink to='/dashboard' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
-            }>Dashboard</NavLink>
-        </li>
-        <li>
-            <NavLink to='/blog' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
-            }>Blog</NavLink>
-        </li>
-        <li>
-            <NavLink to='/contact' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
-            }>Contact</NavLink>
-        </li>
-        <li>
-            <NavLink to='/about' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
-            }>About</NavLink>
-        </li>
+        {
+            user ? <>
+                <li>
+                    <NavLink to='/' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
+                    }>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/dashboard' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
+                    }>Dashboard</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/blog' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
+                    }>Blog</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contact' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
+                    }>Contact</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/about' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
+                    }>About</NavLink>
+                </li>
+            </> : <>
+                <li>
+                    <NavLink to='/' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
+                    }>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/blog' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold text-[#fc5a03] underline" : ""
+                    }>Blog</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contact' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
+                    }>Contact</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/about' className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "font-bold underline text-[#fc5a03]" : ""
+                    }>About</NavLink>
+                </li></>
+        }
     </>
 
 
@@ -91,7 +115,7 @@ const Navbar = () => {
                                                 }
                                             </label>
                                         </div>
-                                        <div className="dropdown-content z-[1] menu p-2 shadow bg-slate-800 rounded-box lg:w-96">
+                                        <div className="dropdown-content z-[1] menu p-2 shadow-2xl bg-white rounded-box lg:w-96">
                                             <div className="p-3">
                                                 <div className="flex justify-center">
                                                     {
@@ -107,9 +131,9 @@ const Navbar = () => {
                                                     <hr className="my-7 w-1/2" />
                                                 </div>
                                                 <div className="text-center">
-                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-[#fc5a03]">Name:</span> {user.displayName
+                                                    <h2 className="text-sm md:text-xl mb-2 "><span className="text-[#fc5a03] font-bold">Name:</span> {user.displayName
                                                     }</h2>
-                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-[#fc5a03]">Email:</span> {user.email}</p>
+                                                    <p className="text-sm  md:text-lg mb-5 "><span className="text-[#fc5a03]  font-bold">Email:</span> {user.email}</p>
                                                 </div>
                                             </div>
                                         </div>
