@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Nature's Beauty",
+        "image": "https://i.ibb.co/2F2rsFC/1.png",
+        "date": "2023-01-15",
+        "description": "A breathtaking view of nature's beauty captured at dawn. The serene landscape is a perfect blend of colors."
+    },
+    {
+        "id": 2,
+        "title": "City Lights",
+        "image": "https://i.ibb.co/47XcvJH/2.png",
+        "date": "2023-02-05",
+        "description": "City lights shining bright in the night sky, creating a mesmerizing urban glow. An urban landscape marvel."
+    },
+    {
+        "id": 3,
+        "title": "Vintage Vibes",
+        "image": "https://i.ibb.co/m0P2YcF/3.png",
+        "date": "2023-03-20",
+        "description": "Transport yourself to another era with this vintage-themed photograph. A glimpse into the past."
+    },
+    {
+        "id": 4,
+        "title": "Culinary Delight",
+        "image": "https://i.ibb.co/ydFGr0Z/4.png",
+        "date": "2023-04-10",
+        "description": "Indulge in the visual feast of a culinary delight. The vibrant colors and textures are a treat for the eyes."
+    },
+    {
+        "id": 5,
+        "title": "Tech Innovations",
+        "image": "https://i.ibb.co/zrnvKrM/5.png",
+        "date": "2023-05-01",
+        "description": "Explore the latest in tech innovations captured in this futuristic photograph. A glimpse into the world of technology."
+    },
+    {
+        "id": 6,
+        "title": "Travel Adventures",
+        "image": "https://i.ibb.co/vHVqbgX/6.png",
+        "date": "2023-06-12",
+        "description": "Embark on a visual journey with this snapshot from exciting travel adventures. Each image tells a unique story."
+    },
+    {
+        "id": 7,
+        "title": "Abstract Artistry",
+        "image": "https://i.ibb.co/tHdJ3Df/7.png",
+        "date": "2023-07-03",
+        "description": "Dive into the world of abstract art with this captivating composition. Interpretation is limitless."
+    },
+    {
+        "id": 8,
+        "title": "Animal Kingdom",
+        "image": "https://i.ibb.co/Vq4L9xk/8.png",
+        "date": "2023-08-15",
+        "description": "Capture the essence of the animal kingdom in this stunning photograph. A glimpse into the diversity of wildlife."
+    },
+    {
+        "id": 9,
+        "title": "Architectural Marvels",
+        "image": "https://i.ibb.co/gybXGjz/9.png",
+        "date": "2023-09-25",
+        "description": "Admire the beauty of architectural marvels with this striking photograph. A celebration of human creativity and design."
+    },
+    {
+        "id": 10,
+        "title": "Sporting Moments",
+        "image": "https://i.ibb.co/Xtdp2xk/10.png",
+        "date": "2023-10-10",
+        "description": "Capture the intensity of sporting moments in this dynamic photograph. A tribute to the spirit of competition."
+    },
+    {
+        "id": 11,
+        "title": "Celebration of Culture",
+        "image": "https://i.ibb.co/7YVdQWG/11.png",
+        "date": "2023-11-22",
+        "description": "Immerse yourself in the celebration of diverse cultures with this vibrant photograph. A visual ode to unity in diversity."
+    },
+    {
+        "id": 12,
+        "title": "Night Sky Wonders",
+        "image": "https://i.ibb.co/Hggt6dG/12.png",
+        "date": "2023-12-05",
+        "description": "Gaze at the wonders of the night sky captured in this awe-inspiring photograph. A cosmic spectacle to behold."
+    }
+]
