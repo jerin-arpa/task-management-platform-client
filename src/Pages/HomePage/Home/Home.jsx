@@ -15,8 +15,8 @@ const Home = () => {
             <EmpoweringTeams></EmpoweringTeams>
             <TaskBlog></TaskBlog>
             <Faq></Faq>
-            <Subscription></Subscription>
             <Review></Review>
+            <Subscription></Subscription>
         </div>
     );
 };
