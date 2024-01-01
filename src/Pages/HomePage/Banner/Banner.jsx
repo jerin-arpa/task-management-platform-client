@@ -16,8 +16,9 @@ const Banner = () => {
                                     <button className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] px-14">Lets Explore</button>
                                 </div>
 
-                                <div className="flex-1">
-                                    <img className='w-full rounded-full' src={banner} alt="" />
+                                <div className="flex-1 flex justify-end">
+                                    {/* <img className='w-full rounded-full' src={banner} alt="" /> */}
+                                    <img className="mask mask-hexagon-2" src={banner} />
                                 </div>
                             </div>
                         </div>

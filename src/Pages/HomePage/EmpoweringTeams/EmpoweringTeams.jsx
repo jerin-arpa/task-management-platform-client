@@ -26,7 +26,7 @@ const EmpoweringTeams = () => {
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 shadow-2xl p-10 rounded-xl">
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <BiSolidFoodMenu className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></BiSolidFoodMenu>
                     </div>
@@ -37,7 +37,7 @@ const EmpoweringTeams = () => {
                 </div>
 
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <BsFillMenuButtonWideFill className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></BsFillMenuButtonWideFill>
                     </div>
@@ -48,7 +48,7 @@ const EmpoweringTeams = () => {
                 </div>
 
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <CgIfDesign className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></CgIfDesign>
                     </div>
@@ -59,7 +59,7 @@ const EmpoweringTeams = () => {
                 </div>
 
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <TfiMenuAlt className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></TfiMenuAlt>
                     </div>
@@ -69,7 +69,7 @@ const EmpoweringTeams = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <MdEngineering className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></MdEngineering>
                     </div>
@@ -79,7 +79,7 @@ const EmpoweringTeams = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <MdOutlineSupportAgent className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></MdOutlineSupportAgent>
                     </div>
@@ -89,7 +89,7 @@ const EmpoweringTeams = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <BiSolidShoppingBags className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></BiSolidShoppingBags>
                     </div>
@@ -99,7 +99,7 @@ const EmpoweringTeams = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <FaHandshake className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></FaHandshake>
                     </div>
@@ -109,7 +109,7 @@ const EmpoweringTeams = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl">
+                <div className="bg-gray-100 flex gap-3 p-5 rounded-xl shadow-xl">
                     <div>
                         <FaUsers className="text-[#fc5a03] text-5xl bg-white rounded-lg p-2"></FaUsers>
                     </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const TaskBlog = () => {
     const [blogs, setBlogs] = useState([]);
@@ -31,7 +32,7 @@ const TaskBlog = () => {
                         className="relative mb-20">
                         <img className="rounded-2xl" src={blog.image} alt="" />
 
-                        <div className="bg-white absolute -bottom-20 mx-5 rounded-2xl p-5">
+                        <div className="bg-white absolute -bottom-20 mx-5 rounded-2xl p-5 shadow-2xl">
                             <p>{blog.date}</p>
                             <h3 className="text-2xl font-bold">{blog.title}</h3>
                             <p>{blog.description}</p>
@@ -41,7 +42,9 @@ const TaskBlog = () => {
             </div>
 
             <div className="pb-20 pt-10 flex justify-center">
-                <button className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] px-14">See All</button>
+                <Link to='/blog'>
+                    <button className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] px-14">See All</button>
+                </Link>
             </div>
         </div>
     );
