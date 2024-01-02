@@ -7,6 +7,8 @@ import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Blog from "../Pages/Blog/Blog";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Dashboard from "../Root/dashboard";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,16 @@ const router = createBrowserRouter([
             },
         ]
     },
+    {
+        path: 'dashboard',
+        element: <PrivateRoute>< Dashboard ></Dashboard ></PrivateRoute>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+
+            }
+        ]
+    }
 ]);
 
 
