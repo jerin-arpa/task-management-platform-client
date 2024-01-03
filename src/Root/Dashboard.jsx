@@ -8,18 +8,20 @@ const Dashboard = () => {
 
 
     return (
-        <div className="bg-slate-50">
-            <div className="drawer lg:drawer-open">
+        <div className="flex">
+            <div className="drawer lg:drawer-open w-24 lg:w-72">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content flex flex-col items-center justify-center">
+                <div className="drawer-content flex flex-col justify-center">
                     {/* Page content here */}
                     <label htmlFor="my-drawer-2" className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] drawer-button lg:hidden">Open drawer</label>
                 </div>
 
+
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
 
-                    <div className=" min-h-screen bg-[#fc5a03] text-white pt-20">
+
+                    <div className=" min-h-screen bg-[#fc5a03] text-white pt-10">
                         <div className="pl-6 mb-10">
                             <div>
                                 <img className="w-36 bg-white rounded-full mb-4" src={logo} alt="" />
@@ -71,10 +73,9 @@ const Dashboard = () => {
                         </ul>
                     </div>
                 </div>
-
-                <div className="flex-1 pt-16 ml-5">
-                    <Outlet></Outlet>
-                </div>
+            </div>
+            <div className="pt-16 ml-5 flex-grow">
+                <Outlet></Outlet>
             </div>
         </div>
     );
