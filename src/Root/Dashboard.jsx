@@ -1,87 +1,65 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { FaBook, FaCalendar, FaHome, FaList, FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
-import { MdEmail, MdOutlineMenu, MdOutlineShoppingBag, MdReviews } from "react-icons/md";
+import { FaHome, FaList, FaUser, FaUtensils } from "react-icons/fa";
+import { MdEmail, MdOutlineMenu, MdOutlineShoppingBag } from "react-icons/md";
+import logo from '../assets/images/logo/logo.png';
 
 
 const Dashboard = () => {
 
-    const isAdmin = true;
 
     return (
         <div className="bg-slate-50">
-            <div>
-                <div className="flex">
-                    <div className="w-72 min-h-screen bg-[#fc5a03] text-white font-extrabold pt-20">
-                        <div className="pl-6 mb-16">
-                            <h2 className="text-3xl font-extrabold"><span className="text-2xl tracking-[1.8em]">TASK</span> Management</h2>
+            <div className="drawer lg:drawer-open">
+                <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+                <div className="drawer-content flex flex-col items-center justify-center">
+                    {/* Page content here */}
+                    <label htmlFor="my-drawer-2" className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] drawer-button lg:hidden">Open drawer</label>
+                </div>
+
+                <div className="drawer-side">
+                    <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
+
+                    <div className=" min-h-screen bg-[#fc5a03] text-white pt-20">
+                        <div className="pl-6 mb-10">
+                            <div>
+                                <img className="w-36 bg-white rounded-full mb-4" src={logo} alt="" />
+                            </div>
+                            <h2 className="text-3xl font-extrabold"><span className="text-2xl tracking-[1.8em]">TASK</span></h2>
+                            <p className="text-3xl font-extrabold"> Management</p>
                         </div>
 
-
-                        <ul className="menu">
-                            {
-                                isAdmin ? <>
-                                    <li className="text-xl">
-                                        <NavLink to="/dashboard/userHome">
-                                            <FaHome></FaHome> Admin Home</NavLink>
-                                    </li>
-                                    <li className="text-xl">
-                                        <NavLink to="/dashboard/addItems">
-                                            <FaUtensils></FaUtensils> Add Items</NavLink>
-                                    </li>
-                                    <li className="text-xl">
-                                        <NavLink to="/dashboard/manageItems">
-                                            <FaList></FaList> Manage Items</NavLink>
-                                    </li>
-                                    <li className="text-xl">
-                                        <NavLink to="/dashboard/manageBookings">
-                                            <FaBook></FaBook>
-                                            Manage Bookings</NavLink>
-                                    </li>
-                                    <li className="text-xl">
-                                        <NavLink to="/dashboard/allUsers">
-                                            <FaUsers></FaUsers>  All Users</NavLink>
-                                    </li>
-                                </>
-                                    :
-                                    <>
-                                        <li className="text-xl">
-                                            <NavLink to="/dashboard/userHome">
-                                                <FaHome></FaHome> User Home</NavLink>
-                                        </li>
-                                        <li className="text-xl">
-                                            <NavLink to="/dashboard/reservation">
-                                                <FaCalendar></FaCalendar> Reservation</NavLink>
-                                        </li>
-                                        <li className="text-xl">
-                                            <NavLink to="/dashboard/cart">
-                                                <FaShoppingCart></FaShoppingCart>My Cart </NavLink>
-                                        </li>
-                                        <li className="text-xl">
-                                            <NavLink to="/dashboard/review">
-                                                <MdReviews></MdReviews>  Add a Review</NavLink>
-                                        </li>
-                                        <li className="text-xl">
-                                            <NavLink to="/dashboard/bookings">
-                                                <FaList></FaList>  My Bookings</NavLink>
-                                        </li>
-                                    </>
-                            }
+                        <ul className="menu p-4 w-72">
+                            <li className="text-xl">
+                                <NavLink to="/dashboard/profile">
+                                    <FaUser></FaUser> Profile</NavLink>
+                            </li>
+                            <li className="text-xl">
+                                <NavLink to="/dashboard/board">
+                                    <FaUser></FaUser> Board (By Status)</NavLink>
+                            </li>
+                            <li className="text-xl">
+                                <NavLink to="/dashboard/createTask">
+                                    <FaUtensils></FaUtensils> Create New Task</NavLink>
+                            </li>
+                            <li className="text-xl">
+                                <NavLink to="/dashboard/previousTask">
+                                    <FaList></FaList> Previous Task</NavLink>
+                            </li>
 
 
                             <div className="divider"></div>
 
 
-                            {/* Shared NavLink */}
                             <li className="text-xl">
                                 <NavLink to="/">
                                     <FaHome></FaHome>Home</NavLink>
                             </li>
                             <li className="text-xl">
-                                <NavLink to="/ourMenu">
+                                <NavLink to="/blog">
                                     <MdOutlineMenu></MdOutlineMenu> Blog</NavLink>
                             </li>
                             <li className="text-xl">
-                                <NavLink to="/ourShop/salad">
+                                <NavLink to="/about">
                                     <MdOutlineShoppingBag></MdOutlineShoppingBag>
                                     About</NavLink>
                             </li>
@@ -92,10 +70,10 @@ const Dashboard = () => {
                             </li>
                         </ul>
                     </div>
+                </div>
 
-                    <div className="flex-1 pt-16 ml-5">
-                        <Outlet></Outlet>
-                    </div>
+                <div className="flex-1 pt-16 ml-5">
+                    <Outlet></Outlet>
                 </div>
             </div>
         </div>

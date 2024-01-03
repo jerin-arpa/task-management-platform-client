@@ -9,6 +9,10 @@ import Blog from "../Pages/Blog/Blog";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Dashboard from "../Root/dashboard";
 import PrivateRoute from "./PrivateRoute";
+import Profile from "../Pages/Dashboard/Profile/Profile";
+import Board from "../Pages/Dashboard/Board/Board";
+import CreateTask from "../Pages/Dashboard/CreateTask/CreateTask";
+import PreviousTask from "../Pages/Dashboard/PreviousTask/PreviousTask";
 
 
 const router = createBrowserRouter([
@@ -49,8 +53,21 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
-
-            }
+                path: "profile",
+                element: <Profile></Profile>,
+            },
+            {
+                path: "board",
+                element: <Board></Board>,
+            },
+            {
+                path: "createTask",
+                element: <CreateTask></CreateTask>,
+            },
+            {
+                path: "previousTask",
+                element: <PreviousTask></PreviousTask>,
+            },
         ]
     }
 ]);
