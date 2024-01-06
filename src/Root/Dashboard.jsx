@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { FaHome, FaList, FaUser, FaUtensils } from "react-icons/fa";
+import { FaHome, FaList, FaUser, FaUtensils, FaClipboardCheck } from "react-icons/fa";
 import { MdEmail, MdOutlineMenu, MdOutlineShoppingBag } from "react-icons/md";
 import logo from '../assets/images/logo/logo.png';
 
@@ -37,7 +37,7 @@ const Dashboard = () => {
                             </li>
                             <li className="text-xl">
                                 <NavLink to="/dashboard/board">
-                                    <FaUser></FaUser> Board (By Status)</NavLink>
+                                    <FaClipboardCheck></FaClipboardCheck> Board (By Status)</NavLink>
                             </li>
                             <li className="text-xl">
                                 <NavLink to="/dashboard/createTask">
