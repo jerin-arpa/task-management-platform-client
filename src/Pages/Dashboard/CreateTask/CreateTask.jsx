@@ -19,8 +19,8 @@ const CreateTask = () => {
             ></DashboardSection>
 
 
-            <div className="flex justify-center mt-20">
-                <div className="shadow-2xl bg-base-100 w-1/2 rounded-xl">
+            <div className="flex justify-center mt-10">
+                <div className="shadow-2xl bg-base-100 w-full m-5 lg:w-1/3 rounded-xl">
                     <form onSubmit={handleAddTask} className="card-body">
                         <div className="form-control">
                             <label className="label">
