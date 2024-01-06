@@ -13,7 +13,7 @@ const Profile = () => {
                 title='Profile'
             ></DashboardSection>
 
-            <div className="flex gap-5 p-10">
+            <div className="flex gap-5 p-8">
                 <img className="w-44 h-44 rounded-full" src={user.photoURL} alt="" />
                 <div className="flex items-center ">
                     <div>

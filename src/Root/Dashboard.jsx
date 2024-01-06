@@ -9,11 +9,11 @@ const Dashboard = () => {
 
     return (
         <div className="flex">
-            <div className="drawer lg:drawer-open w-24 lg:w-72">
+            <div className="drawer lg:drawer-open w-0 lg:w-72">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* Page content here */}
-                    <label htmlFor="my-drawer-2" className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] drawer-button lg:hidden">Open drawer</label>
+                    <label htmlFor="my-drawer-2" className="btn bg-[#fc5a03] border-0 text-white hover:bg-white hover:text-[#fc5a03] drawer-button lg:hidden absolute">Open drawer</label>
                 </div>
 
 
